@@ -6,8 +6,8 @@ module Arturaz
         link_to_remote(name, options, html_options)
       end
 
-      # Generates indicator for _model_ _attr_.
-      def indicator(model, attr, message="Kraunama...")
+      # Generates indicator for _model_ _attr_ (only icon).
+      def indicator(model, attr, message="")
         content_tag :div, progress_meter(message), 
           :id => "#{model}_#{attr}_indicator", :style => css_hidden,
           :class => "indicator"
