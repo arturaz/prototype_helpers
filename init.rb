@@ -1,0 +1,1 @@
+ActionView::Base.send :include, Arturaz::Prototype::HelperMethods
